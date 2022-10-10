@@ -7,48 +7,49 @@
 
 ## 시나리오
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194900610-cc90ed38-60c4-42f4-a014-0af54589b111.png"><br>
-
+----
 ## 구현 기능
+### 0. 데이터 셋 구축
+- 출처: 동물 보호 관리 시스템
+- 기간: 2022.03.02 022.08.12
+- 수집 내용
+    1. 정형데이터: 날짜, 장소, 견종, 보호소 정보
+    2. 비정형 데이터: 유기견 이미지
 
-### 기능 1 
+### 1. 객체 탐지
 
- - 데이터 셋 구축
- - 출처: 동물 보호 관리 시스템
- - 개체수 관리의 어려움
+- 제보 받은 영상은 차, 사람 등 다양한 객체가 공존하기 때문에 유기견만 탐지해내는 과정이 필요함
+- 사용한 모델: YOLOv5
+- 학습 데이터: [25,000장의 고양이와 개의 이미지](https://www.kaggle.com/competitions/dog-breed-identification/data)
+  
+> input: 제보 받은 영상
+  
+> output: 영상 내 객체의 종류를 박스로 분류해낸 영상
+  <br><img width="50%" src="https://user-images.githubusercontent.com/109662803/194903955-1ed45367-ac82-4cf7-b204-e6de762cb401.png"><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"/>
+  <br>
+  
+### 2. 배경 제거
 
+- 유기견의 정확한 특징 추출을 위해 배경을 제거함
+- 사용한 모델: cv2.Canny() - 물체 외곽선 추출 / cv2.grapCut() - 배경 제거
+> input: 객체 탐지 된 이미지
+  
+> output: 크기가 추출된 이미지
+    <br><img width="50%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"><img width="40%" src="https://user-images.githubusercontent.com/81895293/194910990-d502ce8e-9d97-4e81-a93f-305433a006f1.png"/>
+  <br>
 
-### 기능 2
+### 3. 견종 구분
 
- - 객체 탐지
- - 제보 받은 영상은 다양한 객체가 같이 찍히기 때문에 YOLOv5 모델을 이용함
-
-### 기능 3
-
- - 배경 제거
- - 정확한 분석을 위해 배경을 제거함
+- 이미지 내의 유기견의 견종을 구분해내는 과정
+- 사용한 모델: EfficientNet
+- 학습 데이터: [20,581장의 이미지](https://www.kaggle.com/competitions/dog-breed-identification/data)
+> input: 배경이 제거된 이미지
  
-### 기능 4
-
- - 특징 추출
- - K-means 알고리즘을 이용하여 컬러클러스터링을 진행하였고, EfficientNet 을 이용하여 70%정확도의 견종 예측을 완성시킴
-
-### 기능 5
-
- - 데이터베이스
- - MySQL을 이용하여 정형데이터를 관리하였고, AWS 기반 S3 를 이용하여 비정형 데이터를 관리하였음
-
-### 기능 6
-
- - 유사도 분석
- - cv2.HISTCMP_CORREL, cv2.HISTCMP_INTERSECT, cv2.HISTCMP_CHISQR, cv2.HISTCMP_BA\HATTACHARYYA, EMD 등의 함수를 이용하여 실종견 이미지 간의 유사도를 분석함
-
-### 기능 7
-
- - 지도시각화
- - 데이터 베이스 내의 구별 유기겨 현황을 지도로 시각화하여, 한눈에 어느 구에서 많은 유기견이 발생하는지 파악할 수 있으며, 손쉽게 관리 가능하도록 함
-
-
-
+> output: 가장 유사한 상위 3가지 종 추출
+  
+  
+  
+-----
 ## 기대효과 & 발전 방향
 <br><img width="50%" src="https://user-images.githubusercontent.com/81895293/194903368-f267cd14-4397-4457-8c7b-e50c3c402729.png"><img width="50%" src="https://user-images.githubusercontent.com/81895293/194903084-847aa845-ac01-45d1-a797-900f24d8b37e.png"/>
   <br>
