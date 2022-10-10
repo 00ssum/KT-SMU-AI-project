@@ -52,8 +52,7 @@
 - 사용한 모델: K-means
 > input: 배경이 제거된 이미지
 > output: 가장 유사한 상위 5가지의 색상과 비율 벡터를 추출
-  ![image](https://user-images.githubusercontent.com/81895293/194911888-a07a8b8d-77f0-4d06-b15a-9dc2f933e27d.png)
-
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194911888-a07a8b8d-77f0-4d06-b15a-9dc2f933e27d.png"><br>
   
 ### 5. 데이터베이스 구축
 
