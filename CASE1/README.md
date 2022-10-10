@@ -13,7 +13,7 @@
 
 -----
 ### 크기 추출 및 배경색 제거 
-<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/62383521/194909137-9d7c3e06-4a9c-4fdb-bd8c-eae5eccd4d38.JPG"></br>
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194922172-9f2dab0f-7b1d-4a23-94aa-0bdb42ca8d55.jpg"></br>
 </br>
 
 1. OUTPUT 내 객체탐지가 이뤄진 이미지를 대상으로 배경색 제거를 실행 
@@ -21,12 +21,18 @@
 -----
 
 ### 모색 클러스터링
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194923075-42e40e95-b3ca-4f85-9fb7-9ed2948cd821.jpg"></br>
+</br>
 
+1. K-MEANS 알고리즘 이용. k=5 일 경우 가장 클러스터링이 잘 되어, k=5로 선택
+2. 같은 모색끼리 군집화 해주는 알고리즘
 
+출처
+https://moding.tistory.com/entry/Project-6-dataset%EC%9D%84-matrix-%ED%98%95%ED%83%9C%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%B4%EB%B3%B4%EA%B8%B0
 -----
 
 ### 견종 분류
-<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/62383521/194910143-23e73c15-c340-4e73-bba5-802f7478318f.JPG"></br>
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194923804-7d3928c8-447a-405c-b52a-8c7a1cba5af8.jpg"></br>
 </br>
 
 1.Efficient Net으로 견종 분류
