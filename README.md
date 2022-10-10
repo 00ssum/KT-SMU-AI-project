@@ -8,13 +8,6 @@
 ## 시나리오
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194900610-cc90ed38-60c4-42f4-a014-0af54589b111.png"><br>
 
-## 기술 스택
-|  객체 탐지  | 배경 제거 |  특징 추출   |  데이터베이스   |
-| :--------: | :--------: | :------: | :-----: |
-| <img width="80%" src="https://user-images.githubusercontent.com/79439483/187697100-4d0f969d-e1b5-431c-aa12-95b7ac6bb59b.jpg"/>  |   <img width="80%" src="https://user-images.githubusercontent.com/79439483/187698245-09f1f455-199d-491f-80e8-e1bf132beae1.jpg"/>    | - K-means 알고리즘 <br> -EfficentNet <br>  | <img width="20%" src="https://user-images.githubusercontent.com/79439483/187699076-8dad0f10-7dda-454d-9642-524aa7d482b3.jpg"/> <img width="20%" src="https://user-images.githubusercontent.com/79439483/187699784-15097247-aa86-46e8-9aa5-93c72d3dcc5a.jpg"/>|
-
-<br>
-
 ## 구현 기능
 
 ### 기능 1 
@@ -56,20 +49,9 @@
 
 
 
-## 기대효과
-
- - 유기견과 시민 모두의 안전 확보
- - 동물유기에 대한 경각심 재고
- - 유기견에 의한 생태계 혼란 방지
- - 유기견에 의한 사회적 비용 감소
-
-## 발전방향
-
- - 유기동물 종류 추가
- - 유기동물 발생 원인 예측 시스템 구축
- - 실시간 CCTV 영상을 이용한 모니터링
- - 봉사단체와 연계하여 자원 봉사자 파견
-
+## 기대효과 & 발전 방향
+<br><img width="50%" src="https://user-images.githubusercontent.com/81895293/194903368-f267cd14-4397-4457-8c7b-e50c3c402729.png"><img width="50%" src="https://user-images.githubusercontent.com/81895293/194903084-847aa845-ac01-45d1-a797-900f24d8b37e.png"/>
+  <br>
 
 ## 라이센스
-
+위 프로젝트는 KT와 함께하는 상명 AI 경진대회 출품작입니다.
