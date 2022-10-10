@@ -26,6 +26,7 @@
 
 1. K-MEANS 알고리즘 이용. k=5 일 경우 가장 클러스터링이 잘 되어, k=5로 선택
 2. 같은 모색끼리 군집화 해주는 알고리즘
+
 출처
 < https://moding.tistory.com/entry/Project-6-dataset%EC%9D%84-matrix-%ED%98%95%ED%83%9C%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%B4%EB%B3%B4%EA%B8%B0 >
 -----
