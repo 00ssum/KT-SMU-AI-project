@@ -1,44 +1,14 @@
-# KT-SMU-AI-project
-2022 KT와 함께하는 상명 AI 경진대회
-
-
 # Ani -Time 
-## AI 를 활용한 유기견 모니터링 시스템
+**2022 KT와 함께하는 상명 AI 경진대회**은 AI를 활용해 객체검출, 견종분류, 배경제거, 크기추출, 모색 구분등을 통해 유기견의 이미지를 하나의 통합 된 데이터베이스로 구축한다. 
 
-<p align="center">
+이미지, 견종, 위치등의 장소가 입력되면 데이터베이스에서 AI를 활용해 유사도가 가장 높은 객체 정보를 출력한다. 
+<br><img width="50%" src="https://user-images.githubusercontent.com/81895293/194898621-681931f0-03b5-4580-a2e4-b0d1dcce5f47.png"><img width="50%" src="https://user-images.githubusercontent.com/81895293/194898934-d587520b-28e9-4944-8b96-0049fb736f87.png"/>
   <br>
-  <img width="50%" src="https://user-images.githubusercontent.com/79439483/187695733-9de05769-f9e3-4e41-8063-7d1c0e246000.jpg">
-  <br>
-</p>
 
-목차
-
-## 팀원 소개
-
-<p align="center">
-  <br>
-  <img width="50%" src="https://user-images.githubusercontent.com/79439483/187695071-a0f6b7a3-7016-4b4b-801a-b095b3eeaea9.jpg"/>
-  <br>
-</p>
-
-
-## 프로젝트 개요/동기
-</p>
-
-<p align="center">
-  
- - 유기견 개체 수 증가
-  
- - 유기견으로 인한 사회적 문제 증가
-  
- - 개체수 관리의 어려움
-</p>
-
-<br>
+## 시나리오
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194900610-cc90ed38-60c4-42f4-a014-0af54589b111.png"><br>
 
 ## 기술 스택
-
-
 |  객체 탐지  | 배경 제거 |  특징 추출   |  데이터베이스   |
 | :--------: | :--------: | :------: | :-----: |
 | <img width="80%" src="https://user-images.githubusercontent.com/79439483/187697100-4d0f969d-e1b5-431c-aa12-95b7ac6bb59b.jpg"/>  |   <img width="80%" src="https://user-images.githubusercontent.com/79439483/187698245-09f1f455-199d-491f-80e8-e1bf132beae1.jpg"/>    | - K-means 알고리즘 <br> -EfficentNet <br>  | <img width="20%" src="https://user-images.githubusercontent.com/79439483/187699076-8dad0f10-7dda-454d-9642-524aa7d482b3.jpg"/> <img width="20%" src="https://user-images.githubusercontent.com/79439483/187699784-15097247-aa86-46e8-9aa5-93c72d3dcc5a.jpg"/>|
@@ -84,11 +54,6 @@
  - 지도시각화
  - 데이터 베이스 내의 구별 유기겨 현황을 지도로 시각화하여, 한눈에 어느 구에서 많은 유기견이 발생하는지 파악할 수 있으며, 손쉽게 관리 가능하도록 함
 
-
-## 배운 점 & 아쉬운 점
-
- - 지도시각화
- - 데이터 베이스 내의 구별 유기겨 현황을 지도로 시각화하여, 한눈에 어느 구에서 많은 유기견이 발생하는지 파악할 수 있으며, 손쉽게 관리 가능하도록 함
 
 
 ## 기대효과
