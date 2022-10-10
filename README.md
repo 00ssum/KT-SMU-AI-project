@@ -23,8 +23,10 @@
 - 학습 데이터: [25,000장의 고양이와 개의 이미지](https://www.kaggle.com/competitions/dog-breed-identification/data)
   
 > input: 제보 받은 영상
+  
 > output: 영상 내 객체의 종류를 박스로 분류해낸 영상
-  <br><img width="40%" src="https://user-images.githubusercontent.com/109662803/194903955-1ed45367-ac82-4cf7-b204-e6de762cb401.png"><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"/>
+  
+<br><img width="40%" src="https://user-images.githubusercontent.com/109662803/194903955-1ed45367-ac82-4cf7-b204-e6de762cb401.png"><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"/>
   <br>
   
 ### 2. 배경 제거
@@ -32,8 +34,10 @@
 - 유기견의 정확한 특징 추출을 위해 배경을 제거함
 - 사용한 모델: cv2.Canny() - 물체 외곽선 추출 / cv2.grapCut() - 배경 제거
 > input: 객체 탐지 된 이미지
+  
 > output: 크기가 추출된 이미지
-    <br><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"><img width="20%" src="https://user-images.githubusercontent.com/81895293/194910990-d502ce8e-9d97-4e81-a93f-305433a006f1.png"/>
+
+  <br><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"><img width="20%" src="https://user-images.githubusercontent.com/81895293/194910990-d502ce8e-9d97-4e81-a93f-305433a006f1.png"/>
   <br>
 
 ### 3. 견종 구분
@@ -42,8 +46,10 @@
 - 사용한 모델: EfficientNet
 - 학습 데이터: [20,581장의 이미지](https://www.kaggle.com/competitions/dog-breed-identification/data)
 > input: 배경이 제거된 이미지
+  
 > output: 가장 유사한 상위 3가지 종 추출
-      <br><img width="20%" src="https://user-images.githubusercontent.com/81895293/194911705-79c2a362-0a8c-46e2-96cc-1c6ec1e7ee42.png"><img width="30%" src="https://user-images.githubusercontent.com/81895293/194911723-8c3c146b-395a-48d5-b513-2c37956c83c5.png"/>
+
+  <br><img width="20%" src="https://user-images.githubusercontent.com/81895293/194911705-79c2a362-0a8c-46e2-96cc-1c6ec1e7ee42.png"><img width="30%" src="https://user-images.githubusercontent.com/81895293/194911723-8c3c146b-395a-48d5-b513-2c37956c83c5.png"/>
   <br>
 
 ### 4. 모색 구분
@@ -51,8 +57,10 @@
 - 유기견의 모색을 구분해내는 과정으로, 밝기에 영향을 받지 않는 HSV 색상 채널을 사용
 - 사용한 모델: K-means
 > input: 배경이 제거된 이미지
+  
 > output: 가장 유사한 상위 5가지의 색상과 비율 벡터를 추출
-<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194911888-a07a8b8d-77f0-4d06-b15a-9dc2f933e27d.png"><br>
+
+  <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194911888-a07a8b8d-77f0-4d06-b15a-9dc2f933e27d.png"><br>
   
 ### 5. 데이터베이스 구축
 
@@ -82,7 +90,7 @@ ret = cv2.compareHist(query, histogram, index)
   - 사용한 프로그램: QGIS
   - input: 수집한 데이터의 구별 유기견 수를 정리한 csv
   - output: 웹지도 형태의 구별 단계 구분도
-<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194912305-7aeac841-248c-4da4-9abc-8b2cde11673b.png"><br>
+<br><p align="center"><img width="50%" src="https://user-images.githubusercontent.com/81895293/194912305-7aeac841-248c-4da4-9abc-8b2cde11673b.png"><br>
   
 -----
 ## 기대효과 & 발전 방향
