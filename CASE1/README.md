@@ -1,4 +1,6 @@
-# CASE1 
+# CASE1
+
+## 먼저 Detection 폴더에 있는 압축파일들을 압축해제를 먼저 해야합니다.
 
 ### 객체탐지
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/62383521/194908737-eb06af26-f556-4b54-ae3a-e457553db933.JPG"></br>
