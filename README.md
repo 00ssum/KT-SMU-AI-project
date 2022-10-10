@@ -25,7 +25,7 @@
 > input: 제보 받은 영상
   
 > output: 영상 내 객체의 종류를 박스로 분류해낸 영상
-  <br><img width="50%" src="https://user-images.githubusercontent.com/109662803/194903955-1ed45367-ac82-4cf7-b204-e6de762cb401.png"><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"/>
+  <br><img width="40%" src="https://user-images.githubusercontent.com/109662803/194903955-1ed45367-ac82-4cf7-b204-e6de762cb401.png"><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"/>
   <br>
   
 ### 2. 배경 제거
@@ -35,7 +35,7 @@
 > input: 객체 탐지 된 이미지
   
 > output: 크기가 추출된 이미지
-    <br><img width="50%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"><img width="40%" src="https://user-images.githubusercontent.com/81895293/194910990-d502ce8e-9d97-4e81-a93f-305433a006f1.png"/>
+    <br><img width="40%" src="https://user-images.githubusercontent.com/109662803/194904048-d1b7b4b0-53bb-40fa-9004-7644ac6af35b.png"><img width="30%" src="https://user-images.githubusercontent.com/81895293/194910990-d502ce8e-9d97-4e81-a93f-305433a006f1.png"/>
   <br>
 
 ### 3. 견종 구분
