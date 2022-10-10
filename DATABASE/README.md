@@ -3,7 +3,7 @@
 ### 데이터베이스 생성
 1. [AWS 접속](https://aws.amazon.com/ko/?nc2=h_lg) 및 로그인
 2. RDS 콘솔 클릭 후, 왼쪽 탐색 창에서 데이터베이스 클릭
-<br><p align="center"><img width="70%" src="![image](https://user-images.githubusercontent.com/81895293/194908850-995d38c5-72bc-45e3-97c4-499f1437b2cf.png"><br>
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194908850-995d38c5-72bc-45e3-97c4-499f1437b2cf.png"><br>
 3. 데이터베이스 생성 클릭 및, 엔진 옵션 MySQL로 설정 후, 데이터베이스 생성
 
 -----
