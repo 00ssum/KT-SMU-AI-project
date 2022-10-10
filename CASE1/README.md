@@ -2,7 +2,7 @@
 
 ## 먼저 Detection 폴더에 있는 압축파일들을 압축해제를 먼저 해야합니다.
 
-### 객체탐지
+### 객체탐지 -> Yolov5이용
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194917802-c84af394-095e-4390-9e4a-c28fcbeaf743.jpg"></br>
 </br>
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194918489-2de7e29a-31d8-40bd-9b4a-b881f64b9ba4.jpg"></br>
@@ -11,16 +11,20 @@
 
 2. 객체탐지 후 정확도는 엑셀 파일에 기록 후, 개가 나와 있는 이미지만 Crop 하여 저장
 
+https://github.com/ultralytics/yolov5
+
 -----
-### 크기 추출 및 배경색 제거 
+### 크기 추출 및 배경색 제거 -> OpenCV이용
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194922172-9f2dab0f-7b1d-4a23-94aa-0bdb42ca8d55.jpg"></br>
 </br>
 
 1. OUTPUT 내 객체탐지가 이뤄진 이미지를 대상으로 배경색 제거를 실행 
 
+https://opencv.org/
+
 -----
 
-### 모색 클러스터링
+### 모색 클러스터링 -> K-MEANS알고리즘 이용
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194923075-42e40e95-b3ca-4f85-9fb7-9ed2948cd821.jpg"></br>
 </br>
 
@@ -33,7 +37,7 @@
 
 -----
 
-### 견종 분류
+### 견종 분류 -> EfficientNet 이용
 <br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194923804-7d3928c8-447a-405c-b52a-8c7a1cba5af8.jpg"></br>
 </br>
 
@@ -42,6 +46,10 @@
 2.OUTPUT 크기가 추출되고 배경색이 제거된 이미지를 대상으로 견종 분류 실행
 
 3.TOP3 안에 드는 견종 데이터가 엑셀에 %와 함께 저장
+
+논문 링크: [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
+
+Github: https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet
 
 -----
 ### 데이터베이스 업로드
