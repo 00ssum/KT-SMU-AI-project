@@ -3,9 +3,10 @@
 ## 먼저 Detection 폴더에 있는 압축파일들을 압축해제를 먼저 해야합니다.
 
 ### 객체탐지
-<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/62383521/194908737-eb06af26-f556-4b54-ae3a-e457553db933.JPG"></br>
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194917802-c84af394-095e-4390-9e4a-c28fcbeaf743.jpg"></br>
 </br>
-
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/79439483/194918489-2de7e29a-31d8-40bd-9b4a-b881f64b9ba4.jpg"></br>
+</br>
 1. main.py 실행 시 DATA 폴더가 있는 경로에 있는 이미지를 INPUT으로 받음 
 
 2. 객체탐지 후 정확도는 엑셀 파일에 기록 후, 개가 나와 있는 이미지만 Crop 하여 저장
