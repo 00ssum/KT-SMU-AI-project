@@ -19,3 +19,20 @@
   
   ret = cv2.compareHist(query, histogram, index) 
   ~~~
+
+-------
+# 지도 시각화
+***QGIS 3.22.10***
+1. 데이터 가공: 수집한 80개의 유기견 데이터 중, 구별 유기견 수 정리
+  <img width="25%" src="https://user-images.githubusercontent.com/81895293/194907774-5367640e-b288-4645-ac15-c7f3395ce2d6.png">
+
+2. [qgis 다운로드](https://qgis.org/ko/site/forusers/download.html)
+<img width="10%" src="https://user-images.githubusercontent.com/81895293/194907417-8e72161e-746d-4f1d-963d-445ea347fbec.png">
+
+3. 서울시 구별 경계 데이터를 삽입하고, 앞서 정리한 location_count.csv 파일과 join한 뒤, 단계구분도 작성
+<img width="40%" src="https://user-images.githubusercontent.com/81895293/194907471-fcb42338-fea0-4946-b1e0-51e85d7948be.png">
+
+4. 플러그인 qgis2leaf 설치
+<img width="8%" src="https://user-images.githubusercontent.com/81895293/194908220-cb29f5c8-219a-4691-99cf-26b6434d43bb.png">
+
+5. 설치 후, leaflet으로 설정한 후, export 클릭
