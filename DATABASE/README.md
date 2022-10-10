@@ -9,8 +9,7 @@
 ### 데이터베이스 연결
 1. [mysql workbench 설치](https://dev.mysql.com/downloads/workbench/)
 2. "+"클릭
-![image](https://user-images.githubusercontent.com/81895293/194904251-269972a9-209b-44d6-8051-439c6c6f4590.png)
-
+<br><p align="center"><img width="70%" src="https://user-images.githubusercontent.com/81895293/194904251-269972a9-209b-44d6-8051-439c6c6f4590.png"><br>
 3. connenction name-원하는 이름으로 설정
 ~~~
   -Hostname: database-2.cdv8ov56qedi.ap-northeast-2.rds.amazonaws.com 
